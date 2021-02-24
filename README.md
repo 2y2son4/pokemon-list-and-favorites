@@ -2,8 +2,8 @@
 
 ## **Descripción:**
 
-Ejercicios para la creación de una web con un listado de Pokemones, con una tarjeta para cada uno con información relevante, como el
-nombre, tipos, evolución y una imagen.
+Ejercicio para la creación de una web con un listado de Pokemones, con una tarjeta para cada uno con información relevante, como el
+nombre, tipo/s, evolución y una imagen.
 
 ## Instalar todo lo necesario para disfrutar del proyecto:
 
@@ -29,4 +29,4 @@ Se abrirá una ventana del explorador y ya podrás usar la aplicación.
 
 - Link a la [página](https://beta.adalab.es/modulo-3-evaluacion-intermedia-2y2son4/) del ejercicio.
 
-- Link a mi [perfil ](https://github.com/2y2son4)de GitHub.
+- Link a mi [perfil](https://github.com/2y2son4) de GitHub.

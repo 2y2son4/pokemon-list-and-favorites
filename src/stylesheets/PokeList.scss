@@ -10,7 +10,7 @@
     height: rem(300);
     @include flexCenter;
     background-color: $color-bg;
-    border: 2px solid $color-brand;
+    border: rem(5) solid $color-brand;
     border-radius: rem(15);
     margin: rem(10);
     transition: transform $trans-bt;
