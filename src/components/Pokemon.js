@@ -2,10 +2,15 @@ import React from 'react';
 import '.././stylesheets/Pokemon.scss';
 
 const Pokemon = (props) => {
-  console.log(props);
+  let evolution;
+  if (props.pokeEv === null) {
+    evolution = <></>;
+  } else {
+    evolution = <p className="article__ev">Evolution: {props.pokeEv}</p>;
+  }
   const pokemonType = props.pokeType.map((type, i) => {
     return (
-      <li className="article__type--item" id={i + 1} key={i}>
+      <li className="article__type--item" key={i}>
         {type}
       </li>
     );
@@ -14,9 +19,9 @@ const Pokemon = (props) => {
     <article className="article">
       <img src={props.img} alt={props.pokeName} className="article__img" />
       <h2 className="article__name">{props.pokeName}</h2>
+      {evolution}
       <h3 className="article__type">Type:</h3>
       <ul>{pokemonType}</ul>
-      {/* <p className="pokeEv">Evolution: {props.pokeEv}</p> */}
     </article>
   );
 };
