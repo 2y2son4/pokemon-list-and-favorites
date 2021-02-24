@@ -1,4 +1,5 @@
 import React from 'react';
+import '.././stylesheets/Pokemon.scss';
 
 const Pokemon = (props) => {
   console.log(props);
@@ -11,6 +12,7 @@ const Pokemon = (props) => {
       <h2 className="pokeName">{props.pokeName}</h2>
       <h3 className="pokeType">Type:</h3>
       <ul>{pokemonType}</ul>
+      {/* <p className="pokeEv">Evolution: {props.pokeEv}</p> */}
     </article>
   );
 };
