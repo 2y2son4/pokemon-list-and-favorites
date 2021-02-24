@@ -1,0 +1,26 @@
+@import 'Functions';
+@import 'Variables';
+@import 'Mixins';
+
+.article {
+  border-radius: rem(15);
+  color: $color-text;
+  background-color: $color-bg;
+  padding-bottom: rem(10);
+  &__name {
+    font-size: rem(32);
+    font-weight: 500;
+    text-transform: capitalize;
+    border-top: rem(1) solid $color-brand;
+    border-bottom: rem(1) solid $color-brand;
+    margin-bottom: rem(5);
+  }
+  &__type {
+    font-size: rem(20);
+    font-weight: 500;
+    &--item {
+      font-size: rem(18);
+      text-transform: capitalize;
+    }
+  }
+}

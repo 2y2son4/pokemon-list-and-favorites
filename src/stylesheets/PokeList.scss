@@ -1,0 +1,18 @@
+@import 'Functions';
+@import 'Variables';
+@import 'Mixins';
+
+.pokeCard {
+  @include flexCenter;
+  flex-wrap: wrap;
+  &__item {
+    width: rem(210);
+    border: 2px solid $color-brand;
+    border-radius: rem(15);
+    margin: rem(10);
+    transition: transform $trans-bt;
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+}

@@ -11,6 +11,7 @@
   align-items: flex-end;
   &__span {
     color: $color-text;
+    font-size: rem(18);
     &--link {
       color: $color-text;
       &:hover {
