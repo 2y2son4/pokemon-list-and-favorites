@@ -2,7 +2,12 @@
 @import 'Variables';
 @import 'Mixins';
 
-.imgTitle {
-  margin: rem(20);
-  width: rem(400);
+.header {
+  &__title {
+    display: none;
+  }
+  &__img {
+    margin: rem(20);
+    width: rem(400);
+  }
 }

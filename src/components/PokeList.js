@@ -6,7 +6,7 @@ class PokeList extends React.Component {
   render() {
     const resultList = this.props.list.map((listItem, i) => {
       return (
-        <li className="pokeCard__item" id={i + 1} key={i}>
+        <li className="pokeCard__item" id={listItem.id} key={i}>
           <Pokemon img={listItem.url} pokeName={listItem.name} pokeType={listItem.types} pokeEv={listItem.evolution} />
         </li>
       );

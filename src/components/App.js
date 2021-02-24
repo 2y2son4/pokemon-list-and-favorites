@@ -1,10 +1,11 @@
+import React from 'react';
 import '.././stylesheets/App.scss';
 import Data from '.././data/Data.json';
 import Header from './Header';
-import Footer from './Footer';
 import PokeList from './PokeList';
+import Footer from './Footer';
 
-function App() {
+const App = () => {
   return (
     <div className="App App-header">
       <Header />
@@ -12,6 +13,6 @@ function App() {
       <Footer />
     </div>
   );
-}
+};
 
 export default App;

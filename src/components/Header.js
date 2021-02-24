@@ -5,7 +5,8 @@ import Logo from '../images/logo-slogan.png';
 const Header = () => {
   return (
     <header>
-      <img src={Logo} alt="Pokemon List" className="imgTitle" />
+      <h1 className="header__title">Pokemon's list</h1>
+      <img src={Logo} alt="Pokemon List" className="header__img" />
     </header>
   );
 };
