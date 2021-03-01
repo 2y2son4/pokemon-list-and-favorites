@@ -6,7 +6,11 @@ const Pokemon = (props) => {
   if (props.pokeEv === null) {
     evolution = <></>;
   } else {
-    evolution = <p className="article__ev">Evolution: {props.pokeEv}</p>;
+    evolution = (
+      <p className="article__ev">
+        Evolves from <span className="article__ev capitalize">{props.pokeEv}</span>
+      </p>
+    );
   }
   const pokemonType = props.pokeType.map((type, i) => {
     return (

@@ -6,7 +6,7 @@
   border-radius: rem(15);
   padding-bottom: rem(10);
   &__name {
-    font-size: rem(32);
+    font-size: rem(28);
     font-weight: 500;
     text-transform: capitalize;
     border-top: rem(1) solid $color-brand;
@@ -18,18 +18,21 @@
     width: rem(100);
   }
   &__ev {
-    font-size: rem(20);
-    text-transform: capitalize;
+    font-size: rem(15);
     border-bottom: rem(1) solid $color-brand;
     margin-bottom: rem(5);
     padding-bottom: rem(5);
   }
   &__type {
-    font-size: rem(20);
+    font-size: rem(18);
     font-weight: 500;
     &--item {
-      font-size: rem(18);
+      font-size: rem(16);
       text-transform: capitalize;
     }
   }
+}
+
+.capitalize {
+  text-transform: capitalize;
 }
