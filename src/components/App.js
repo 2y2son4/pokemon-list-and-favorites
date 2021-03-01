@@ -25,6 +25,7 @@ const App = () => {
       setFavs([...favs]);
     }
   };
+
   let favText;
   let noneClass;
   if (favs.length !== 0) {
@@ -33,6 +34,7 @@ const App = () => {
     favText = '';
     noneClass = 'none';
   }
+
   return (
     <div className="App App-header">
       <Header />

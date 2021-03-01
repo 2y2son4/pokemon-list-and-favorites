@@ -2,7 +2,7 @@ import React from 'react';
 import '.././stylesheets/Pokemon.scss';
 
 const Pokemon = (props) => {
-  const handleClick = (ev) => {
+  const handleClick = () => {
     props.handlePokemon(props.id);
   };
 
