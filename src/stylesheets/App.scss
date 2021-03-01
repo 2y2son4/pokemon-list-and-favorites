@@ -15,3 +15,21 @@
   font-size: calc(rem(10) + 2vmin);
   color: $color-text;
 }
+
+.favs {
+  &__title {
+    font-size: rem(26);
+    margin: 15px;
+    width: rem(300);
+    color: $color-bg;
+    background-color: $color-text;
+    text-align: center;
+    margin: rem(30) auto;
+    border-radius: rem(15);
+    border: rem(5) solid $color-brand;
+  }
+}
+
+.none {
+  display: none;
+}

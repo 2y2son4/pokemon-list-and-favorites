@@ -4,10 +4,18 @@ import '.././stylesheets/PokeList.scss';
 
 class PokeList extends React.Component {
   render() {
-    const resultList = this.props.list.map((listItem, i) => {
+    console.log(this.props);
+    const resultList = this.props.pokemons.map((pokemon, i) => {
       return (
-        <li className="pokeCard__item" id={listItem.id} key={i}>
-          <Pokemon img={listItem.url} pokeName={listItem.name} pokeType={listItem.types} pokeEv={listItem.evolution} />
+        <li className="pokeCard__item" id={pokemon.id} key={i}>
+          <Pokemon
+            id={pokemon.id}
+            img={pokemon.url}
+            pokeName={pokemon.name}
+            pokeType={pokemon.types}
+            pokeEv={pokemon.evolution}
+            handlePokemon={this.props.handlePokemon}
+          />
         </li>
       );
     });

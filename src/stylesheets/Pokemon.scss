@@ -3,6 +3,7 @@
 @import 'Mixins';
 
 .article {
+  cursor: pointer;
   border-radius: rem(15);
   padding-bottom: rem(10);
   &__name {
@@ -15,7 +16,7 @@
     padding-bottom: rem(5);
   }
   &__img {
-    width: rem(100);
+    width: rem(120);
   }
   &__ev {
     font-size: rem(15);

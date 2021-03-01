@@ -2,6 +2,10 @@ import React from 'react';
 import '.././stylesheets/Pokemon.scss';
 
 const Pokemon = (props) => {
+  const handleClick = (ev) => {
+    props.handlePokemon(props.id);
+  };
+
   let evolution;
   if (props.pokeEv === null) {
     evolution = <></>;
@@ -20,7 +24,7 @@ const Pokemon = (props) => {
     );
   });
   return (
-    <article className="article">
+    <article className="article" id={props.id} onClick={handleClick}>
       <img src={props.img} alt={props.pokeName} className="article__img" />
       <h2 className="article__name">{props.pokeName}</h2>
       {evolution}
