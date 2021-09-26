@@ -36,15 +36,15 @@ const App = () => {
   }
 
   return (
-    <div className="App App-header">
+    <div className='App App-header'>
       <Header />
       <main>
         <section>
-          <h2 className="favs__title">List of Pokemons</h2>
+          <h2 className='title'>List of Pokemons</h2>
           <PokeList pokemons={pokemons} handlePokemon={handlePokemon} />
         </section>
 
-        <section className="favs">
+        <section className='favs'>
           <h2 className={'favs__title ' + noneClass}>{favText}</h2>
           <PokeList pokemons={favs} handlePokemon={handlePokemon} />
         </section>
