@@ -4,7 +4,6 @@ import '.././stylesheets/PokeList.scss';
 
 class PokeList extends React.Component {
   render() {
-    console.log(this.props);
     const resultList = this.props.pokemons.map((pokemon, i) => {
       return (
         <li className={'pokeCard__item'} id={pokemon.id} key={i}>
@@ -20,7 +19,7 @@ class PokeList extends React.Component {
       );
     });
 
-    return <ul className="pokeCard">{resultList}</ul>;
+    return <ul className='pokeCard'>{resultList}</ul>;
   }
 }
 
