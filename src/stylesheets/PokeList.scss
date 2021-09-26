@@ -5,15 +5,18 @@
 .pokeCard {
   @include flexCenter;
   flex-wrap: wrap;
+  max-width: rem(1024);
+
   &__item {
     width: rem(200);
     height: rem(280);
     @include flexCenter;
-    background-color: $color-bg;
+    background-color: $color-bg_alpha40;
     border: rem(5) solid $color-brand;
     border-radius: rem(15);
     margin: rem(10);
     transition: transform $trans-bt;
+
     &:hover {
       transform: scale(1.1);
     }

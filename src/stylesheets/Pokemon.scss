@@ -6,6 +6,8 @@
   cursor: pointer;
   border-radius: rem(15);
   padding-bottom: rem(10);
+  width: 100%;
+
   &__name {
     font-size: rem(28);
     font-weight: 500;
@@ -15,25 +17,59 @@
     margin-bottom: rem(5);
     padding-bottom: rem(5);
   }
+
   &__img {
     width: rem(120);
   }
+
   &__ev {
     font-size: rem(15);
     border-bottom: rem(1) solid $color-brand;
     margin-bottom: rem(5);
     padding-bottom: rem(5);
   }
+
   &__type {
     font-size: rem(18);
-    font-weight: 500;
+    font-weight: 700;
+
     &--item {
       font-size: rem(16);
       text-transform: capitalize;
+      font-weight: 500;
     }
   }
 }
 
 .capitalize {
   text-transform: capitalize;
+}
+
+.fire {
+  color: #ee6b2f;
+}
+.water {
+  color: #30a7d7;
+}
+.grass {
+  color: #4dad5b;
+}
+.flying {
+  color: #1b53ba;
+}
+.bug {
+  color: #855ac9;
+}
+.poison {
+  color: greenyellow;
+}
+
+.fire,
+.water,
+.grass,
+.flying,
+.bug,
+.poison {
+  text-shadow: rgba(0, 0, 0, 0.466) -1px 0, rgba(0, 0, 0, 0.795) 0 -1px, rgba(0, 0, 0, 0.418) 1px 1px,
+    rgba(0, 0, 0, 0.705) 0 1px, rgba(0, 0, 0, 0.527) -1px -1px, rgba(0, 0, 0, 0.616) 1px 1px;
 }

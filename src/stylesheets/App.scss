@@ -16,17 +16,38 @@
   color: $color-text;
 }
 
+.title {
+  font-size: rem(26);
+  color: $color-bg;
+  background-color: $color-text;
+  text-align: center;
+  margin: rem(30) auto;
+  border-radius: rem(15);
+  border: rem(5) solid $color-brand;
+}
+
 .favs {
   &__title {
     font-size: rem(26);
-    margin: 15px;
-    width: rem(300);
     color: $color-bg;
     background-color: $color-text;
     text-align: center;
     margin: rem(30) auto;
     border-radius: rem(15);
-    border: rem(5) solid $color-brand;
+    border: rem(5) solid $highlight-brand;
+  }
+
+  > ul > li {
+    border-color: $highlight-brand;
+
+    > article > h2,
+    p {
+      border-color: $highlight-brand;
+
+      > span {
+        border-color: $highlight-brand;
+      }
+    }
   }
 }
 
